@@ -1,0 +1,34 @@
+{%extends 'base.html'%} {% block content %}
+<div action="{{url_for('show_book', book_id=book._id)}}">
+    <div class="row">
+        <div class="input-field col s6">
+            <strong>Name: {{book.book_name}}</strong>
+            
+        </div>
+        <div class="input-field col s6">
+            <strong>Author: {{book.author_name}}</strong>
+         
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+            <strong>Published: {{book.published_date}}</strong>
+        </div>
+        <div class="input-field col s6">
+            <strong>Genre: {{book.Genre}}</strong>
+        </div>
+    </div>
+    <div class="row">
+         <div class="input-field col s6">
+             <a class = "book-links" href = "{{book.link}}">Buy here</a>
+ 
+        </div>
+        
+         <div class="input-field col s6">
+         <a class = "book-links" href = "{{book.cover_link}}">Cover Image</a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

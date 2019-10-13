@@ -1,0 +1,41 @@
+{%extends 'base.html'%} {% block content %}
+
+<h1>Book Review</h1>
+<p>Welcome to the book review site. Feel free to enter new books and leave a comment about them, and vote on your favourite books.</p>
+<div class = "row">
+    <a href = "{{url_for('add_book')}}" class = "waves-effect waves-light btn">Add Book</a>
+</div>
+{% for book in books %}
+
+
+<li>
+
+    <div class="collapsible-header viewBook">
+        <a class="view-link" href="{{url_for('view_book', book_id=book._id)}}"></a>
+
+
+        <div class="task-header col m2">
+            <strong> {{book.book_name}}</strong>
+        </div>
+        <div class="task-header col m2">
+            <strong> {{book.author_name}}</strong>
+        </div>
+        <div class="task-header col m2">
+            <strong> {{book.Genre}}</strong>
+        </div>
+
+        <div class="task-header col m2">
+            <strong> {{book.published_date}}</strong>
+        </div>
+        <div class="col m2">
+
+            <a href="{{url_for('edit_book', book_id=book._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+            <a href="{{url_for('delete_book',book_id=book._id)}}" class="waves-effect waves-light btn btn_small btn_del red">Delete</a>
+
+
+        </div>
+    </div>
+
+</li>
+
+{% endfor %} {% endblock %}

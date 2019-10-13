@@ -1,0 +1,53 @@
+nav {
+ color:#fff;
+ background-color: #2a2e6f;
+ width:100%;
+ height:56px;
+ line-height:56px
+}
+
+.btn_small{
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+    
+}
+
+
+.btn_del{
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.2em;
+    
+}
+
+.task-header{
+    margin-top: 5px;
+    width: 100%;
+    text-decoration: none;
+
+    
+}
+
+.input-field{
+        border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border4444444444s
+}
+
+.view-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.book-links{
+    text-decoration: none;
+    color: black;
+}
